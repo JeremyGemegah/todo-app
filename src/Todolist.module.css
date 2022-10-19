@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+.main_wrapper{
+    width: 100vw;
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: column;
+}
+
+.header{
+    top: 0;
+    width:100%;
+   
+    /* background-color: blueviolet; */
+   
+    
+    padding-right: 280px;
+    padding-top:100px;
+    
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.addnew{
+    float: right;
+    margin-right: 60px;
+    background-color:rgb(41, 178, 39);
+    width: 250px;
+    padding: 25px 50px;
+    border:none ;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-top: 70px;
+    cursor: pointer;
+    
+      
+    
+}
+
+
+
+.activeitem{
+    background-color: rgb(137, 226, 135);
+    width: 400px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    padding: 25px;
+    min-height: 350px;
+    border: 1px solid grey;
+}
+
+.board{
+    
+    min-height: 100%;
+    padding: 20px 200px;
+}
+
+.wrapper{
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 400px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    padding: 25px;
+    min-height: 350px;
+    border: 1px solid grey;
+}
+
+.check input{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.check{
+   
+
+    float: right;
+    z-index: 2;
+    margin: -10px;
+    opacity: 0;
+    
+}
+
+.remove{
+    display: block;
+    font-size: 25px;
+    padding: 5px;
+    width: 40px;
+    font-weight: 300px;
+    border: none;
+    background-color: rgb(208, 42, 75);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.edit{
+    display: block;
+    margin-top: 15px;
+    padding: 12px 5px;
+    width: 40px;
+    font-weight: 300px;
+    border: none;
+    background-color: rgb(41, 178, 39);
+    cursor: pointer;
+
+}
+
+.item_title{
+margin-bottom: 10px;
+}
+
+.item_content{
+    font-size: 18px;
+}
+
+.item:hover .check{
+    opacity: 1;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+
+.activeitem:hover .check{
+    opacity: 1;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}

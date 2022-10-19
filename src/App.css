@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.vail{
+  display: none;
+}
+
+@media (max-width: 930px) {
+.vail{
+  display: block;
+  color: white;
+  font-weight: 500px;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+  }
+}
